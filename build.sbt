@@ -40,7 +40,9 @@ val AkkaVersion = "2.4.8"
 libraryDependencies ++= Seq(
   "com.typesafe.akka"      %% "akka-stream"                         % AkkaVersion,
   "com.typesafe.akka"      %% "akka-stream-testkit"                 % AkkaVersion   % "test",
-  "org.scalatest"          %% "scalatest"                           % "2.2.6"       % "test"
+  "org.scalatest"          %% "scalatest"                           % "2.2.6"       % "test", // ApacheV2
+  "junit"                  %  "junit"                               % "4.12"        % "test", // Common Public License 1.0
+  "com.novocode"           %  "junit-interface"                     % "0.11"        % "test"  // BSD-like
 )
 
 headers := headers.value ++ Map(
